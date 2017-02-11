@@ -53,7 +53,8 @@ GNOCCHI_CEPH_POOL_PGP=${GNOCCHI_CEPH_POOL_PGP:-8}
 GNOCCHI_STORAGE_BACKEND=${GNOCCHI_STORAGE_BACKEND:-file}
 
 # Grafana settings
-GRAFANA_RPM_PKG=${GRAFANA_RPM_PKG:-https://grafanarel.s3.amazonaws.com/builds/grafana-2.6.0-1.x86_64.rpm}
+#GRAFANA_RPM_PKG=${GRAFANA_RPM_PKG:-https://grafanarel.s3.amazonaws.com/builds/grafana-2.6.0-1.x86_64.rpm}
+GRAFANA_RPM_PKG="/home/devstack/t/grafana-2.6.0-1.x86_64.rpm"
 GRAFANA_DEB_PKG=${GRAFANA_DEB_PKG:-https://grafanarel.s3.amazonaws.com/builds/grafana_2.6.0_amd64.deb}
 GRAFANA_PLUGINS_DIR=${GRAFANA_PLUGINS_DIR:-$DEST/grafana-plugins}
 GRAFANA_PLUGINS_REPO=${GRAFANA_PLUGINS_REPO:-http://github.com/sileht/grafana-plugins-gnocchi.git}
