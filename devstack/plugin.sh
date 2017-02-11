@@ -156,7 +156,7 @@ function _gnocchi_install_grafana {
         sudo dpkg -i "$file"
         rm $file
     elif is_fedora; then
-        sudo yum install "$GRAFANA_RPM_PKG"
+        sudo yum -y install "$GRAFANA_RPM_PKG"
     fi
 
     # NOTE(sileht): We current support only 2.6, when 
