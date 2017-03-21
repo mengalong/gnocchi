@@ -151,8 +151,9 @@ function _gnocchi_install_redis {
 
 function _gnocchi_install_grafana {
     if is_ubuntu; then
-        local file=$(mktemp /tmp/grafanapkg-XXXXX)
-        wget -O "$file" "$GRAFANA_DEB_PKG"
+        #local file=$(mktemp /tmp/grafanapkg-XXXXX)
+        #wget -O "$file" "$GRAFANA_DEB_PKG"
+        local file="/tmp/grafana_2.6.0_amd64.deb"
         sudo dpkg -i "$file"
         rm $file
     elif is_fedora; then
