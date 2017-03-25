@@ -155,7 +155,7 @@ function _gnocchi_install_grafana {
         #wget -O "$file" "$GRAFANA_DEB_PKG"
         local file="/tmp/grafana_2.6.0_amd64.deb"
         sudo dpkg -i "$file"
-        rm $file
+        #rm $file
     elif is_fedora; then
         sudo yum -y install "$GRAFANA_RPM_PKG"
     fi
